@@ -69,11 +69,11 @@ public class LoginController
                     ConnectionManager cm = ConnectionManager.getInstance();
 
                     logger.info("** Attempting login using VCAP_SERVICES **");
-                    logger.info(jsonString);
+                   // logger.info(jsonString);
 
                     Login login = Utils.parseLoginCredentials(jsonString);
 
-                    logger.info("Login : " + login);
+                    //logger.info("Login : " + login);
 
                     MysqlConnection newConn =
                             new MysqlConnection
@@ -152,8 +152,8 @@ public class LoginController
 
         Login loginObj = new Login(username, password, url, "");
 
-        logger.info("url {" + loginObj.getUrl() + "}");
-        logger.info("user {" + loginObj.getUsername() + "}");
+       // logger.info("url {" + loginObj.getUrl() + "}");
+        //logger.info("user {" + loginObj.getUsername() + "}");
 
         try
         {
