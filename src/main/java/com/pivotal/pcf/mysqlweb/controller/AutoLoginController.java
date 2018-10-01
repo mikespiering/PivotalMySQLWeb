@@ -67,8 +67,8 @@ public class AutoLoginController
             passwd = fixRequestParam(request.getParameter("passwd"));
             url = fixRequestParam(request.getParameter("url"));
 
-            logger.info("username = " + username);
-            logger.info("url = " + url);
+            //logger.info("username = " + username);
+            //logger.info("url = " + url);
 
             if (username.trim().equals(""))
             {
